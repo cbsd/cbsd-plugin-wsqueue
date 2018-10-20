@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"flag"
 	"log"
-	"golang.org/x/net/websocket"
+	"github.com/gorilla/websocket v1.4.0"
 )
 
 var origin = "http://localhost/"
