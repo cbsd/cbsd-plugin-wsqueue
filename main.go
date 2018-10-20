@@ -26,7 +26,6 @@ func main() {
 	}
 
 	var url=*Ws_Ptr
-
 	ws, err := websocket.Dial(url, "", origin)
 
 	if err != nil {
