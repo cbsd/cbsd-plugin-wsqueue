@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"flag"
 	"log"
-	"github.com/gorilla/websocket v1.4.0"
+	"github.com/gorilla/websocket"
 )
 
 var origin = "http://localhost/"
