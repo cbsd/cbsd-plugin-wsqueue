@@ -26,7 +26,7 @@ func main() {
 	}
 
 	var url=*Ws_Ptr
-	ws, err := websocket.Dial(url, "", origin)
+	ws, _, err := websocket.DefaultDialer.Dial(url, nil)
 
 	if err != nil {
 		log.Fatal(err)
@@ -36,7 +36,8 @@ func main() {
 
 	message := []byte(*Message_Ptr)
 
-	_, err = ws.Write(message)
+	err = ws.WriteMessage(websocket.TextMessage, message)
+
 	if err != nil {
 		log.Fatal(err)
 	}
