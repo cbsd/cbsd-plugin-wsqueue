@@ -1,6 +1,0 @@
-# List of the allowed cbsd commands
-SECCMD="\
-${SECCMD}
-cbsd_queue \
-cbsd_queue_sys
-"
