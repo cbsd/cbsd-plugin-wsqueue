@@ -7,7 +7,7 @@ import (
 	"github.com/gorilla/websocket"
 )
 
-var origin = "http://localhost/"
+var origin = "http://127.0.0.1/"
 
 func main() {
 	Message_Ptr := flag.String("message", "", "a string")
